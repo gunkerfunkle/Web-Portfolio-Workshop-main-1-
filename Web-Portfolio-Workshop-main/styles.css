@@ -2,13 +2,24 @@
     --brand-1: #48ac7d;
 }
 
+html {
+    box-sizing: border-box;
+}
+*, *::before.banner, *::after {
+    box-sizing:  inherit;
+}
+
+body {
+    margin: 0;
+}
+
 header {
-    background-color: rgb(19, 21, 121);
+    background-color: rgb(19, 121, 24);
     padding: 16px 24px;
     font-family: "Source Serif 4", serif;
     a {
       color: white;
-      text-decoration: none;
+      text-decoration: none; 
     }
 }
 
@@ -45,4 +56,12 @@ h2, h3 {
 .project-image {
     width: 200px;
     height: 50px;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    background: black;
 }
